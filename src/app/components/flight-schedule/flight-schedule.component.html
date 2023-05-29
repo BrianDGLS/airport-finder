@@ -1,0 +1,24 @@
+<div class="flight-schedule">
+  <div class="flight-schedule__header">
+    <h3>Flights</h3>
+    <p>{{ utcTime }}</p>
+  </div>
+
+  <div class="flight-schedule__departures">
+    <h4>Departures</h4>
+    <div *ngFor="let departure of departures.slice(0, 6)" class="flight-schedule__departures-list">
+      <span>{{shortTime(departure.movement.scheduledTimeUtc)}}</span>
+      <span>{{departure.number}}</span>
+      <span>{{departure.airline.name}}</span>
+    </div>
+  </div>
+
+  <div class="flight-schedule__arrivals">
+    <h4>Arrivals</h4>
+    <div *ngFor="let arrival of arrivals.slice(0, 6)" class="flight-schedule__arrivals-list">
+      <span>{{shortTime(arrival.movement.scheduledTimeUtc)}}</span>
+      <span>{{arrival.number}}</span>
+      <span>{{arrival.airline.name}}</span>
+    </div>
+  </div>
+</div>

@@ -9,9 +9,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AirportSearchResultComponent } from './components/airport-search-result/airport-search-result.component';
 import { WorldMapComponent } from './components/world-map/world-map.component';
 import { AppLogoComponent } from './components/app-logo/app-logo.component';
+import { AirportSearchComponent } from './views/airport-search/airport-search.component';
+import { AirportDetailsComponent } from './views/airport-details/airport-details.component';
+import { AirportMapComponent } from './components/airport-map/airport-map.component';
+import { FlightScheduleComponent } from './components/flight-schedule/flight-schedule.component';
 
 @NgModule({
-  declarations: [AppComponent, AirportSearchFormComponent, AirportSearchResultComponent, WorldMapComponent, AppLogoComponent],
+  declarations: [AppComponent, AirportSearchFormComponent, AirportSearchResultComponent, WorldMapComponent, AppLogoComponent, AirportSearchComponent, AirportDetailsComponent, AirportMapComponent, FlightScheduleComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

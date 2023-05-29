@@ -1,0 +1,13 @@
+<p *ngIf="showLoadingState()">loading</p>
+
+<app-world-map></app-world-map>
+
+<app-airport-search-form></app-airport-search-form>
+
+<div class="results-container" *ngIf="airports().length > 0">
+  <span>Search results</span>
+  <app-airport-search-result
+    *ngFor="let airport of airports()"
+    [airport]="airport"
+  ></app-airport-search-result>
+</div>
