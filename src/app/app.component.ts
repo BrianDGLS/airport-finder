@@ -1,10 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, computed } from '@angular/core';
+import { AirportService } from './services/airport.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-  title = 'airport-finder';
+  showLoadingState = computed(() => this.airportService.requestInProgress());
+  airports = computed(() => this.airportService.airportSearchResults());
+
+  constructor(private airportService: AirportService) {}
 }

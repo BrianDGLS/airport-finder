@@ -1,0 +1,15 @@
+<form [formGroup]="searchForm" (ngSubmit)="search()">
+  <label for="searchText" class="offscreen">Search Text: </label>
+  <input
+    required
+    minlength="3"
+    type="search"
+    id="searchText"
+    formControlName="searchText"
+    placeholder="Search for any airport..."
+  />
+  <button *ngIf="searchForm.dirty" (click)="reset()" type="reset" value="Reset">
+    Reset
+  </button>
+</form>
+<span *ngIf="!validInputLength()" class="invalid-input-message">Please enter a minimum of 3 characters.</span>

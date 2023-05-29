@@ -1,0 +1,29 @@
+.app-logo {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+  margin-left: 10px;
+
+  @media only screen and (min-width: 600px) {
+    width: 360px;
+    margin-left: 40px;
+    justify-content: space-between;
+  }
+
+  &__image {
+    width: 60px;
+    height: 60px;
+    background-image: url("/assets/logo.svg");
+  }
+
+  &__text {
+    font-size: 32px;
+    margin-left: 10px;
+    @media only screen and (min-width: 600px) {
+      font-size: 45px;
+    }
+
+    font-family: "Roboto-Bold", "Courier New", Courier, monospace;
+    color: #0083fc;
+  }
+}

@@ -1,0 +1,74 @@
+form {
+  color: #555;
+  display: flex;
+  padding: 2px;
+  border: 2px solid #EEE;
+  border-bottom: 3px solid #EEE;
+  border-radius: 8px;
+  justify-content: space-between;
+  margin: 0 auto;
+  height: 60px;
+  width: calc(100% - 20px);
+
+  @media only screen and (min-width: 600px) {
+    width: calc(100% - 80px);
+  }
+}
+
+input {
+  width: 100%;
+  border: none;
+  display: block;
+  font-size: 16px;
+  padding: 14px 4px 14px 40px;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' class='bi bi-search' viewBox='0 0 16 16'%3E%3Cpath d='M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z'%3E%3C/path%3E%3C/svg%3E")
+    no-repeat 13px center;
+  opacity: 0.7;
+}
+
+button[type="reset"] {
+  border: none;
+  background: transparent;
+  margin: 0;
+  padding: 7px 8px;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid transparent;
+  border-radius: inherit;
+}
+
+button[type="reset"]::placeholder {
+  color: #bbb;
+}
+
+button[type="reset"] {
+  text-indent: -999px;
+  overflow: hidden;
+  width: 40px;
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
+  border-radius: inherit;
+  background: transparent
+    url("data:image/svg+xml,%3Csvg width='64px' height='64px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg' stroke='%23000000'%3E%3Cg id='SVGRepo_bgCarrier' stroke-width='0'%3E%3C/g%3E%3Cg id='SVGRepo_tracerCarrier' stroke-linecap='round' stroke-linejoin='round' stroke='%23CCCCCC' stroke-width='0.528'%3E%3C/g%3E%3Cg id='SVGRepo_iconCarrier'%3E%3Cg id='Menu / Close_MD'%3E%3Cpath id='Vector' d='M18 18L12 12M12 12L6 6M12 12L18 6M12 12L6 18' stroke='%23000000' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E")
+    no-repeat center;
+    background-size: 65%;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+button[type="reset"]:hover {
+  opacity: 1;
+}
+
+button[type="reset"]:focus,
+input[type="search"]:focus {
+  outline: none;
+}
+
+.invalid-input-message {
+  color: tomato;
+  line-height: 2rem;
+  padding: 1rem;
+}
