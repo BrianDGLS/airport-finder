@@ -13,9 +13,10 @@ import { AirportSearchComponent } from './views/airport-search/airport-search.co
 import { AirportDetailsComponent } from './views/airport-details/airport-details.component';
 import { AirportMapComponent } from './components/airport-map/airport-map.component';
 import { FlightScheduleComponent } from './components/flight-schedule/flight-schedule.component';
+import { LoadingIconComponent } from './components/loading-icon/loading-icon.component';
 
 @NgModule({
-  declarations: [AppComponent, AirportSearchFormComponent, AirportSearchResultComponent, WorldMapComponent, AppLogoComponent, AirportSearchComponent, AirportDetailsComponent, AirportMapComponent, FlightScheduleComponent],
+  declarations: [AppComponent, AirportSearchFormComponent, AirportSearchResultComponent, WorldMapComponent, AppLogoComponent, AirportSearchComponent, AirportDetailsComponent, AirportMapComponent, FlightScheduleComponent, LoadingIconComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,

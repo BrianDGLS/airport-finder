@@ -7,7 +7,6 @@ import { AirportService } from 'src/app/services/airport.service';
   styleUrls: ['./airport-search.component.scss'],
 })
 export class AirportSearchComponent {
-  showLoadingState = computed(() => this.airportService.requestInProgress());
   airports = computed(() => this.airportService.airportSearchResults());
 
   constructor(private airportService: AirportService) {}
